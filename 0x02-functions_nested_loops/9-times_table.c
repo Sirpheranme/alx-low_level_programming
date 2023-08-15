@@ -5,29 +5,31 @@
  */
 void times_table(void)
 {
-    int row, column;
+    int i, j, k;
 
-    for (row = 0; row <= 9; row++)
+    for (i = 0; i < 10; i++)
     {
-        for (column = 0; column <= 9; column++)
+        for (j = 0; j < 10; j++)
         {
-            int result = row * column;
-
-            if (column != 0)
-                printf(", ");
-
-            if (result >= 10)
-                printf("%d", result);
-            else
-                printf(" %d", result);
-        }
-        printf("\n");
+            k = j * i;
+            if (j == 0)
+               {
+		       _putchar(k + '0');
+	       }
+	    if (k < 10 && j != 0)
+	    {
+		    putchar(',');
+			    putchar(' ');
+			    putchar(' ');
+			    putchar(k + '0');
+	    } else if (k >= 10)
+	    {
+		    putchar(',');
+		    putchar(' ');
+                            putchar((k / 10) + '0');
+                            putchar((k % 10) + '0');
+	    }
+	}
+	putchar('\n');
     }
 }
-
-int main(void)
-{
-    times_table(); /* Call the function to print the 9 times table */
-    return 0;
-}
-
