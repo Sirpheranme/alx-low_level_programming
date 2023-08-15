@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - jack_bauer prints every minute
+ * main - check the code
+ *
  * Return: 0
  */
 int main(void)
