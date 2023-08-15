@@ -27,7 +27,7 @@ void times_table(void)
 
 int main(void)
 {
-    times_table(); // Call the function to print the 9 times table
+    times_table(); /* Call the function to print the 9 times table */
     return 0;
 }
 
